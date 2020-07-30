@@ -1,0 +1,13 @@
+version: '3'
+# Esse arquivo está sendo versionado apenas para fins de demonstração
+services:
+  db:
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db 
+  app:
+    environment: 
+      - DB_NAME=email_sender
+      - DB_PASSWORD=password
+  
